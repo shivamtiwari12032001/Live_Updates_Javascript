@@ -1,6 +1,7 @@
 
-//selects all the inputs with class name==controls
-//selects all the inputs with class name==controls
+
+//selects all the inputs with class name=="controls"
+
 const inputs =document.querySelectorAll(".controls input");
 function handleUpadte(){
     // console.log(this.value);
@@ -8,7 +9,7 @@ function handleUpadte(){
     // console.log(this.dataset);
     // console.log(suffix);
     // console.log(this.name)
-     // console.log(this.name)
+     
     document.documentElement.style.setProperty(`--${this.name}`,this.value+suffix);
 }
 inputs.forEach(input=> input.addEventListener('change',handleUpadte));
