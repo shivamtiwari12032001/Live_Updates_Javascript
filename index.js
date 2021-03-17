@@ -5,7 +5,9 @@ function handleUpadte(){
     // console.log(this.dataset);
     // console.log(suffix);
     // console.log(this.name)
-    document.documentElement.style.setProperty(`--$(this.name)`,this.value+suffix);
+     // console.log(this.name)
+    document.documentElement.style.setProperty(`--${this.name}`,this.value+suffix);
 }
 inputs.forEach(input=> input.addEventListener('change',handleUpadte));
 inputs.forEach(input=> input.addEventListener('mousemove',handleUpadte));
+
