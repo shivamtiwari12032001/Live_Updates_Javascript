@@ -1,3 +1,5 @@
+
+//selects all the inputs with class name=controls
 const inputs =document.querySelectorAll(".controls input");
 function handleUpadte(){
     // console.log(this.value);
